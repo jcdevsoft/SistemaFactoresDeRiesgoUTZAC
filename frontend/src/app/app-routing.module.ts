@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'listados',
     loadChildren: () => import('./pacientes/listados/listados.module').then( m => m.ListadosPageModule)
   },
+  {
+    path: 'editar',
+    loadChildren: () => import('./pacientes/editar/editar.module').then( m => m.EditarPageModule)
+  },
 
 ];
 
