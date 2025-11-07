@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'cuestionario',
     loadChildren: () => import('./formulario/cuestionario/cuestionario.module').then( m => m.CuestionarioPageModule)
   },
+  {
+    path: 'editar',
+    loadChildren: () => import('./medicos/editar/editar.module').then( m => m.EditarPageModule)
+  },
 
 ];
 
