@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'crearmedicos',
     loadChildren: () => import('./pacientes/crearmedicos/crearmedicos.module').then( m => m.CrearmedicosPageModule)
   },
+  {
+    path: 'detalles',
+    loadChildren: () => import('./historial/detalles/detalles.module').then( m => m.DetallesPageModule)
+  },
 
 ];
 
