@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'editar',
     loadChildren: () => import('./medicos/editar/editar.module').then( m => m.EditarPageModule)
   },
+  {
+    path: 'crearmedicos',
+    loadChildren: () => import('./pacientes/crearmedicos/crearmedicos.module').then( m => m.CrearmedicosPageModule)
+  },
 
 ];
 
